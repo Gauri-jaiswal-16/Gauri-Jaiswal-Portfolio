@@ -109,7 +109,9 @@ body {
 .skip-link {
   position: absolute;
   left: -9999px;
-  top: 1rem;
+  top: -9999px;
+  opacity: 0;
+  pointer-events: none;
   z-index: 200;
   background: #1f4d3a;
   color: white;
@@ -117,7 +119,11 @@ body {
   border-radius: 999px;
   font-size: 0.875rem;
   font-weight: 600;
+  transition: left 0.2s ease, top 0.2s ease, opacity 0.2s ease;
 }
-.skip-link:focus {
+.skip-link:focus-visible {
   left: 1rem;
+  top: 1rem;
+  opacity: 1;
+  pointer-events: auto;
 }

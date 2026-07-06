@@ -9,16 +9,38 @@ import { profile } from "@/lib/data";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSending(true);
+    setError(null);
+
     const form = e.currentTarget;
     const name = (form.elements.namedItem("name") as HTMLInputElement)?.value ?? "";
+    const email = (form.elements.namedItem("email") as HTMLInputElement)?.value ?? "";
     const message = (form.elements.namedItem("message") as HTMLTextAreaElement)?.value ?? "";
-    const subject = encodeURIComponent(`Portfolio enquiry from ${name}`);
-    const body = encodeURIComponent(message);
-    window.location.href = `mailto:${profile.email}?subject=${subject}&body=${body}`;
-    setSent(true);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      if (!response.ok) {
+        const data = await response.json().catch(() => null);
+        throw new Error(data?.error ?? "Unable to send message. Please try again later.");
+      }
+
+      setSent(true);
+      form.reset();
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unable to send message.");
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -131,15 +153,21 @@ export default function Contact() {
                 <Magnetic strength={8} className="block w-full">
                   <button
                     type="submit"
-                    className="focus-ring relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.02]"
+                    disabled={sending}
+                    className="focus-ring relative inline-flex w-full items-center justify-center gap-2 overflow-hidden rounded-full bg-accent px-5 py-3 text-sm font-semibold text-white transition-transform hover:scale-[1.02] disabled:cursor-not-allowed disabled:opacity-70"
                   >
                     <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 hover:translate-x-full" />
-                    <Send size={15} /> Send message
+                    <Send size={15} /> {sending ? "Sending…" : "Send message"}
                   </button>
                 </Magnetic>
                 {sent && (
                   <p className="text-center text-xs text-primary dark:text-soft-accent">
-                    Opening your email client to send this — thank you!
+                    Message sent successfully — thank you!
+                  </p>
+                )}
+                {error && (
+                  <p className="text-center text-xs text-destructive dark:text-destructive-light">
+                    {error}
                   </p>
                 )}
               </form>

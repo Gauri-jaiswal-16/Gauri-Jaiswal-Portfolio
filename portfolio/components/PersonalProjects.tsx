@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Github, ArrowUpRight } from "lucide-react";
 import Reveal from "./Reveal";
 import TiltCard from "./TiltCard";
@@ -29,15 +30,37 @@ export default function PersonalProjects() {
                         {p.name}
                       </h3>
                     </div>
-                    <a
-                      href={p.github}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`${p.name} on GitHub`}
-                      className="focus-ring flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line dark:border-line-dark text-ink dark:text-ink-dark transition-all duration-300 hover:rotate-6 hover:border-accent hover:text-accent"
-                    >
-                      <Github size={15} />
-                    </a>
+                    {p.github ? (
+                      <a
+                        href={p.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${p.name} on GitHub`}
+                        className="focus-ring flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line dark:border-line-dark text-ink dark:text-ink-dark transition-all duration-300 hover:rotate-6 hover:border-accent hover:text-accent"
+                      >
+                        <Github size={15} />
+                      </a>
+                    ) : p.url ? (
+                      p.url?.startsWith("/") ? (
+                        <Link
+                          href={p.url}
+                          aria-label={`Open ${p.name} project`}
+                          className="focus-ring flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line dark:border-line-dark text-ink dark:text-ink-dark transition-all duration-300 hover:rotate-6 hover:border-accent hover:text-accent"
+                        >
+                          <Github size={15} />
+                        </Link>
+                      ) : (
+                        <a
+                          href={p.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`${p.name} project link`}
+                          className="focus-ring flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-line dark:border-line-dark text-ink dark:text-ink-dark transition-all duration-300 hover:rotate-6 hover:border-accent hover:text-accent"
+                        >
+                          <Github size={15} />
+                        </a>
+                      )
+                    ) : null}
                   </div>
 
                   <p className="mt-3 text-sm leading-relaxed text-muted dark:text-muted-dark">
@@ -70,15 +93,38 @@ export default function PersonalProjects() {
                     <p className="mt-4 text-xs italic text-muted dark:text-muted-dark">{p.note}</p>
                   )}
 
-                  <a
-                    href={p.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="focus-ring mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary dark:text-soft-accent transition-colors hover:text-accent"
-                  >
-                    View on GitHub{" "}
-                    <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-                  </a>
+                  {p.url ? (
+                    p.url?.startsWith("/") ? (
+                      <Link
+                        href={p.url}
+                        className="focus-ring mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary dark:text-soft-accent transition-colors hover:text-accent"
+                      >
+                        View project
+                        <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      </Link>
+                    ) : (
+                      <a
+                        href={p.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="focus-ring mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary dark:text-soft-accent transition-colors hover:text-accent"
+                      >
+                        View project
+                        <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                      </a>
+                    )
+                  ) : null}
+                  {p.github && (
+                    <a
+                      href={p.github}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="focus-ring mt-4 inline-flex items-center gap-1 text-sm font-semibold text-primary dark:text-soft-accent transition-colors hover:text-accent"
+                    >
+                      View source
+                      <ArrowUpRight size={14} className="transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                    </a>
+                  )}
                 </div>
               </TiltCard>
             </Reveal>

@@ -21,6 +21,11 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Gauri Jaiswal — first-year AI/ML engineering student, UI/UX designer, and video editor, building toward a career in applied AI.",
   metadataBase: new URL("https://gaurijaiswal.dev"),
+  viewport: {
+    width: "device-width",
+    initialScale: 1,
+    minimumScale: 1,
+  },
   openGraph: {
     title: "Gauri Jaiswal — AI/ML Student & UI/UX Designer",
     description:

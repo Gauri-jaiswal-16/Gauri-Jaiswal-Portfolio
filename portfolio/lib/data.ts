@@ -121,6 +121,7 @@ type PersonalProject = {
   summary: string;
   tech: string[];
   highlights: string[];
+  url?: string;
   github: string;
   status: string;
   note?: string;
@@ -138,7 +139,7 @@ export const personalProjects: PersonalProject[] = [
       "Built a clean, fully responsive interface.",
       "First project handling asynchronous data and API error states.",
     ],
-    github: "https://github.com/Gauri-jaiswal-16",
+    github: "https://github.com/Gauri-jaiswal-16/GenAI-Projects/blob/main/weather_agent.py",
     status: "Built",
   },
   {
