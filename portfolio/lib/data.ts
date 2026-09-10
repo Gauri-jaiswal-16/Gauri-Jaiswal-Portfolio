@@ -7,7 +7,7 @@ export const profile = {
   name: "Gauri Jaiswal",
   title: "AI/ML Engineering Student · UI/UX Designer · Flutter Developer (learning)",
   location: "Bahraich, Uttar Pradesh, India",
-  email: "gaurijaiswal406@gmail.com",
+  email: "gaurijaiswal.work@gmail.com",
   phone: "927-706-0358",
   github: "https://github.com/Gauri-jaiswal-16",
   linkedin:

@@ -132,13 +132,9 @@ export default function Hero() {
               <Linkedin size={17} />
             </a>
             <a
-              href="#contact"
-              onClick={(e) => {
-                e.preventDefault();
-                document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-              }}
+              href={`mailto:${profile.email}`}
               className="focus-ring inline-flex h-11 w-11 items-center justify-center rounded-full border border-line dark:border-line-dark transition-colors hover:border-accent hover:text-accent"
-              aria-label="Contact"
+              aria-label="Email"
             >
               <Mail size={17} />
             </a>
