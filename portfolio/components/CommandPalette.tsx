@@ -20,6 +20,7 @@ export default function CommandPalette() {
     () => [
       { label: "Go to About", hint: "Section", icon: ArrowRight, run: () => scrollTo("about") },
       { label: "Go to Experience", hint: "Section", icon: ArrowRight, run: () => scrollTo("experience") },
+      { label: "Go to Real-World Work", hint: "Section", icon: ArrowRight, run: () => scrollTo("real-world") },
       { label: "Go to AI Engineering", hint: "Section", icon: ArrowRight, run: () => scrollTo("ai-journey") },
       { label: "Go to Projects", hint: "Section", icon: ArrowRight, run: () => scrollTo("work") },
       { label: "Go to Skills", hint: "Section", icon: ArrowRight, run: () => scrollTo("learning") },

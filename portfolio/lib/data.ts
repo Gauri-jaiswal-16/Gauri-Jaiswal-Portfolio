@@ -37,7 +37,7 @@ export const experience = [
   {
     company: "Difmo Private Limited",
     role: "UI/UX Designer & Video Editor (Freelance)",
-    period: "Feb 2026 – May 2026 · 6 months",
+    period: "January 2026 – June 2026 · 6 months",
     bullets: [
       "Designed user-friendly, visually clean UI/UX layouts for live client projects, with a focus on usability and accessibility.",
       "Built wireframes, prototypes, and interface designs in Figma across three products: NextZeni Academy, ToLetForRent, and an internal analytics dashboard (ITBD).",
@@ -47,6 +47,50 @@ export const experience = [
       "Managed multiple concurrent projects while holding delivery timelines.",
     ],
     certificateImage: "/images/misc/certificate.jpg",
+  },
+];
+
+// Real-world, live technology platforms she has contributed to — distinct
+// from the Difmo UI/UX case studies below. These are operational products,
+// not design exercises, and are positioned around technology coordination,
+// website/product execution, and on-ground problem solving rather than
+// visual design alone.
+export const realWorldProjects = [
+  {
+    slug: "presshop",
+    name: "PressHop",
+    tag: "AI-Enabled Field Operations Platform",
+    website: "https://www.presshop.com/",
+    summary:
+      "PressHop is a real-world technology platform that brings together AI, field operations, verification, and evidence collection, supported by a large network of local, on-ground personnel — not just a website, but an operational system that has to function in the field.",
+    involvement:
+      "Contributed to the technology and website side of PressHop — working on how the platform functions and holds up in practice, not only how it looks. That meant thinking beyond visual design to how a distributed, field-based operation actually uses the platform day to day, and helping bridge what the operations side needed with what the technology could deliver.",
+    focusAreas: [
+      "Technical coordination and website/product execution for a live, operational platform",
+      "Real-world problem solving for a system that has to work reliably in the field, not just on screen",
+      "Translating on-ground and operational requirements into practical digital solutions",
+      "Supporting website functionality, usability, and day-to-day digital workflow",
+    ],
+    demonstrates:
+      "Exposure to a genuine, operational technology product involving AI and field operations — the ability to work across technology, product thinking, and on-ground realities at the same time.",
+  },
+  {
+    slug: "sajjad-husain-law-associates",
+    name: "Sajjad Husain Law Associates",
+    tag: "Legal-Tech Professional Platform",
+    website: "https://www.sajjadhusainlawassociates.com/en/about",
+    summary:
+      "Sajjad Husain Law Associates is a technology-driven legal services platform that pairs a professional legal practice with structured digital resources — High Court and Supreme Court information, legal articles, bare acts, case-related information, and multiple legal practice areas.",
+    involvement:
+      "Contributed to the technology and website side of the platform — supporting how a professional legal service organizes and presents a large amount of structured legal information online, and helping the digital side of the business run reliably alongside the legal practice itself.",
+    focusAreas: [
+      "Technical coordination for a professional/legal services platform",
+      "Supporting website functionality and organization across multiple legal information sections",
+      "Understanding how technology can support a professional service business, not just represent it visually",
+      "Troubleshooting and improving day-to-day digital workflow",
+    ],
+    demonstrates:
+      "Experience working with a technology-driven professional services business, and the ability to support a real client's digital presence beyond visual design.",
   },
 ];
 
@@ -366,7 +410,7 @@ export const projectDemos = [
 export const achievements = [
   {
     title: "Difmo UI/UX Design Internship",
-    period: "Feb – May 2026",
+    period: "January – June 2026",
     description:
       "Completed a 6-month UI/UX design internship at Difmo Private Limited, certified by the company.",
   },

@@ -9,6 +9,7 @@ import CommandPalette from "./CommandPalette";
 const LINKS = [
   { id: "about", label: "About" },
   { id: "experience", label: "Experience" },
+  { id: "real-world", label: "Real-World Work" },
   { id: "ai-journey", label: "AI/ML" },
   { id: "work", label: "Work" },
   { id: "learning", label: "Skills" },

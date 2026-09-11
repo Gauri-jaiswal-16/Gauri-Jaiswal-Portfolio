@@ -8,6 +8,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
+import RealWorldProjects from "@/components/RealWorldProjects";
 import AIJourney from "@/components/AIJourney";
 import Projects from "@/components/Projects";
 import ProjectDemos from "@/components/ProjectDemos";
@@ -34,6 +35,7 @@ export default function Home() {
           <About />
           <SectionDivider />
           <Experience />
+          <RealWorldProjects />
           <AIJourney />
           <SectionDivider />
           <Projects />
