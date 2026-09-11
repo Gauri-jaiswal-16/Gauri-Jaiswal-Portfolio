@@ -15,7 +15,7 @@ export default function PersonalProjects() {
           </h2>
         </Reveal>
 
-        <div className="mt-8 grid gap-6 sm:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2">
           {personalProjects.map((p, i) => (
             <Reveal key={p.name} delay={i * 0.08}>
               <TiltCard className="group relative h-full rounded-2xl p-[1.5px] transition-shadow duration-500 hover:shadow-lift">

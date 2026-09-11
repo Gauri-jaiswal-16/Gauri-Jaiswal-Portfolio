@@ -18,7 +18,7 @@ export default function ProjectDemos() {
           </p>
         </Reveal>
 
-        <div className="mt-8 grid gap-5 sm:grid-cols-2">
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
           {projectDemos.map((demo, i) => (
             <Reveal key={demo.title} delay={i * 0.08}>
               <div className="group relative h-full rounded-2xl p-[1.5px] transition-shadow duration-500 hover:shadow-lift">

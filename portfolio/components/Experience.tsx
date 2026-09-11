@@ -114,7 +114,7 @@ export default function Experience() {
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-line to-transparent opacity-100 transition-opacity duration-500 group-hover:opacity-0 dark:from-line-dark" />
                 <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent via-soft-accent to-primary opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-                <div className="relative grid gap-8 rounded-[calc(1.5rem-1.5px)] bg-card dark:bg-card-dark p-6 md:grid-cols-[1fr_300px] md:p-8">
+                <div className="relative grid grid-cols-1 gap-8 rounded-[calc(1.5rem-1.5px)] bg-card dark:bg-card-dark p-6 md:grid-cols-[1fr_300px] md:p-8">
                   <div>
                     <div className="flex flex-wrap items-baseline justify-between gap-2">
                       <h3 className="font-display text-xl font-bold text-ink dark:text-ink-dark">

@@ -27,7 +27,7 @@ export default function Skills() {
           </p>
         </Reveal>
 
-        <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div className="mt-12 grid grid-cols-1 gap-10 lg:grid-cols-[1.1fr_0.9fr]">
           {/* Established skills */}
           <Reveal>
             <div className="space-y-6">

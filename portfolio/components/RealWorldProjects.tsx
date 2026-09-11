@@ -59,7 +59,7 @@ export default function RealWorldProjects() {
                     </div>
                   </div>
 
-                  <div className="mt-5 grid gap-4 md:grid-cols-2">
+                  <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
                     <ul className="space-y-1.5">
                       {project.focusAreas.map((f) => (
                         <li

@@ -12,7 +12,7 @@ const STATS = [
 export default function About() {
   return (
     <section id="about" className="py-20 md:py-28">
-      <div className="section-container grid gap-12 md:grid-cols-[0.4fr_0.6fr]">
+      <div className="section-container grid grid-cols-1 gap-12 md:grid-cols-[0.4fr_0.6fr]">
         <Reveal>
           <p className="eyebrow mb-3">About</p>
           <h2 className="font-display text-3xl font-bold tracking-tight text-ink dark:text-ink-dark sm:text-4xl">

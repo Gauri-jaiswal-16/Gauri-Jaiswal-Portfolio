@@ -56,7 +56,7 @@ export default function Nav() {
           Gauri Jaiswal
         </button>
 
-        <ul className="hidden md:flex items-center gap-7">
+        <ul className="hidden lg:flex items-center gap-6 xl:gap-7">
           {LINKS.map((link) => (
             <li key={link.id}>
               <button
@@ -78,7 +78,7 @@ export default function Nav() {
           ))}
         </ul>
 
-        <div className="hidden md:flex items-center gap-3">
+        <div className="hidden lg:flex items-center gap-3">
           <CommandPalette />
           <ThemeToggle />
           <a
@@ -90,7 +90,7 @@ export default function Nav() {
           </a>
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        <div className="flex items-center gap-2 lg:hidden">
           <ThemeToggle />
           <button
             aria-label="Toggle menu"
@@ -109,7 +109,7 @@ export default function Nav() {
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.25, ease: "easeInOut" }}
-            className="md:hidden glass-nav overflow-hidden border-t border-line dark:border-line-dark"
+            className="lg:hidden glass-nav overflow-hidden border-t border-line dark:border-line-dark"
           >
             <ul className="section-container flex flex-col gap-1 py-3">
               {LINKS.map((link, i) => (

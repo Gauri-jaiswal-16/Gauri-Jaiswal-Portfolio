@@ -17,7 +17,7 @@ export default function Footer() {
 
   return (
     <footer className="border-t border-line dark:border-line-dark bg-card dark:bg-card-dark">
-      <div className="section-container grid gap-10 py-14 sm:grid-cols-3">
+      <div className="section-container grid grid-cols-1 gap-10 py-14 sm:grid-cols-3">
         <div>
           <p className="font-display text-lg font-bold text-primary dark:text-soft-accent">
             Gauri Jaiswal

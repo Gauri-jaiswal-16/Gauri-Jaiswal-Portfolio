@@ -11,7 +11,7 @@ export default function Creative() {
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-line to-transparent opacity-100 transition-opacity duration-500 group-hover:opacity-0 dark:from-line-dark" />
             <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-accent via-soft-accent to-primary opacity-0 transition-opacity duration-500 group-hover:opacity-100" />
 
-            <div className="relative grid gap-8 rounded-[calc(1.5rem-1.5px)] bg-card dark:bg-card-dark p-6 md:grid-cols-[280px_1fr] md:items-center md:p-8">
+            <div className="relative grid grid-cols-1 gap-8 rounded-[calc(1.5rem-1.5px)] bg-card dark:bg-card-dark p-6 md:grid-cols-[280px_1fr] md:items-center md:p-8">
               <div className="relative mx-auto aspect-[3/4] w-full max-w-[280px] overflow-hidden rounded-2xl">
                 <Image
                   src={creativeWork.poster.image}

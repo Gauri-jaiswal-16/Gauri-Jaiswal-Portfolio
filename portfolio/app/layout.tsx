@@ -43,7 +43,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`} suppressHydrationWarning>
-      <body className="font-body antialiased transition-colors duration-300">
+      <body className="font-body antialiased transition-colors duration-300 overflow-x-hidden">
         <a href="#main-content" className="skip-link">
           Skip to content
         </a>

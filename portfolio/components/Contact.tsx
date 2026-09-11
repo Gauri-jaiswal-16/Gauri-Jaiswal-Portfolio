@@ -57,7 +57,7 @@ export default function Contact() {
             className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full bg-accent/10 blur-3xl"
           />
 
-          <div className="relative grid gap-12 md:grid-cols-2">
+          <div className="relative grid grid-cols-1 gap-12 md:grid-cols-2">
             <Reveal>
               <p className="eyebrow">Let&apos;s talk</p>
               <h2 className="mt-3 font-display text-3xl font-bold leading-tight text-ink dark:text-ink-dark sm:text-4xl">

@@ -52,7 +52,7 @@ export default function Hero() {
         style={{ animationDelay: "1.5s" }}
       />
 
-      <div className="section-container relative grid gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-center">
+      <div className="section-container relative grid grid-cols-1 gap-12 md:grid-cols-[1.15fr_0.85fr] md:items-center">
         <div>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
