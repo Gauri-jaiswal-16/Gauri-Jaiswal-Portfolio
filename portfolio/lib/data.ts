@@ -5,7 +5,7 @@
 
 export const profile = {
   name: "Gauri Jaiswal",
-  title: "AI/ML Engineering Student · UI/UX Designer · Flutter Developer (learning)",
+  title: "AI/ML Engineering Student · AI Product Design Intern · Flutter Developer (learning)",
   location: "Bahraich, Uttar Pradesh, India",
   email: "gaurijaiswal.work@gmail.com",
   phone: "927-706-0358",
@@ -28,7 +28,7 @@ export const profile = {
 export const about = {
   paragraphs: [
     "I'm in my first year of a B.Tech in Artificial Intelligence & Machine Learning, and my career goal is to grow into an AI/ML engineering and LLM research role. That goal is still ahead of me — what I have today is a solid design and front-end foundation, built through real client work.",
-    "Over a six-month UI/UX design internship at Difmo Private Limited, I designed interfaces for live products, worked directly with clients, and shipped work that real users interact with. Alongside that, I edit video professionally in CapCut and have been teaching myself web fundamentals with HTML, CSS, JavaScript, and React.",
+    "Over a six-month AI Product Design internship at Difmo Private Limited, I designed interfaces for live products, worked directly with clients, and shipped work that real users interact with. Alongside that, I edit video professionally in CapCut and have been teaching myself web fundamentals with HTML, CSS, JavaScript, and React.",
     "On the AI/ML side, I've moved past just reading docs: my GenAI-Projects GitHub repo has working scripts for a local-model API, a tool-calling agent, structured reasoning, and the ingestion half of a RAG pipeline, alongside a couple of experiments that are honestly still buggy. I'm not going to round that up into 'production AI systems' — some of it is small, one script has a known bug — but it's real, running code, and this section grows as more of it comes together.",
   ],
 };
@@ -36,7 +36,7 @@ export const about = {
 export const experience = [
   {
     company: "Difmo Private Limited",
-    role: "UI/UX Designer & Video Editor (Freelance)",
+    role: "AI Product Design Intern & Video Editor (Freelance)",
     period: "January 2026 – June 2026 · 6 months",
     bullets: [
       "Designed user-friendly, visually clean UI/UX layouts for live client projects, with a focus on usability and accessibility.",
@@ -46,7 +46,7 @@ export const experience = [
       "Created posters and branding assets aligned with client marketing campaigns, including festival creatives.",
       "Managed multiple concurrent projects while holding delivery timelines.",
     ],
-    certificateImage: "/images/misc/certificate.jpg",
+    certificateImage: "/images/misc/certificate.png",
   },
 ];
 
@@ -101,7 +101,7 @@ export const caseStudies = [
     tag: "UI/UX Case Study",
     summary:
       "A skill-driven learning platform for communication training, English fluency, and interview readiness — designed end-to-end in Figma for Difmo's client NextZeni.",
-    role: "UI/UX Designer",
+    role: "AI Product Design Intern",
     responsibilities: [
       "Designed the full site flow: hero, course categories, 'How It Works', and testimonials.",
       "Built the four-step onboarding pattern (Browse & Choose → Enroll & Access → Learn at Your Pace → Complete & Certify).",
@@ -131,7 +131,7 @@ export const caseStudies = [
     tag: "UI/UX Case Study",
     summary:
       "A rental marketplace connecting property owners and tenants — rooms, flats, PGs, and offices — designed for clarity and fast, location-based search.",
-    role: "UI/UX Designer",
+    role: "AI Product Design Intern",
     responsibilities: [
       "Designed the property discovery flow: search, filtering by location and price range, and listing detail screens.",
       "Designed the tenant-owner direct communication pattern for enquiries.",
@@ -409,10 +409,10 @@ export const projectDemos = [
 
 export const achievements = [
   {
-    title: "Difmo UI/UX Design Internship",
+    title: "Difmo AI Product Design Internship",
     period: "January – June 2026",
     description:
-      "Completed a 6-month UI/UX design internship at Difmo Private Limited, certified by the company.",
+      "Completed a 6-month AI Product Design internship at Difmo Private Limited, certified by the company.",
   },
   {
     title: "NextZeni Academy — Shipped Design",

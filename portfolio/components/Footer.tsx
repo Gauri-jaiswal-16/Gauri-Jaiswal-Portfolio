@@ -23,7 +23,7 @@ export default function Footer() {
             Gauri Jaiswal
           </p>
           <p className="mt-2 max-w-xs text-sm leading-relaxed text-muted dark:text-muted-dark">
-            AI/ML engineering student, UI/UX designer, and creative editor — building toward
+            AI/ML engineering student, AI Product Design intern, and creative editor — building toward
             applied AI, one real project at a time.
           </p>
         </div>

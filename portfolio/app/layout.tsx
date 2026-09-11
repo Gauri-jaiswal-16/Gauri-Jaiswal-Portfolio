@@ -17,9 +17,9 @@ const body = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Gauri Jaiswal — AI/ML Student & UI/UX Designer",
+  title: "Gauri Jaiswal — AI/ML Student & AI Product Design Intern",
   description:
-    "Portfolio of Gauri Jaiswal — first-year AI/ML engineering student, UI/UX designer, and video editor, building toward a career in applied AI.",
+    "Portfolio of Gauri Jaiswal — first-year AI/ML engineering student, AI Product Design intern, and video editor, building toward a career in applied AI.",
   metadataBase: new URL("https://gaurijaiswal.dev"),
   viewport: {
     width: "device-width",
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     minimumScale: 1,
   },
   openGraph: {
-    title: "Gauri Jaiswal — AI/ML Student & UI/UX Designer",
+    title: "Gauri Jaiswal — AI/ML Student & AI Product Design Intern",
     description:
-      "Portfolio of Gauri Jaiswal — first-year AI/ML engineering student, UI/UX designer, and video editor.",
+      "Portfolio of Gauri Jaiswal — first-year AI/ML engineering student, AI Product Design intern, and video editor.",
     url: "https://gaurijaiswal.dev",
     siteName: "Gauri Jaiswal",
     type: "website",
